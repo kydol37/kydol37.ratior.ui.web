@@ -1,0 +1,32 @@
+{
+  "name": "ratior",
+  "version": "0.0.1",
+  "description": "Auto Trading System for me",
+  "authors": [
+    "keehyun han <kydol37 at gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://kydol37.iptime.org/ratior",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": ">=3.2.x",
+    "angular": ">=1.2.x",
+    "angular-route": ">=1.2.x",
+    "angular-scenario": ">=1.2.x",
+    "angular-mocks": ">=1.2.x",
+    "requirejs": ">=2.1.x",
+    "requirejs-text": ">=2.0.x",
+    "html5-boilerplate": ">=4.3.x",
+    "jquery": ">=2.1.1",
+	"jquery-ui": ">=1.10.4"		
+  }
+}
+

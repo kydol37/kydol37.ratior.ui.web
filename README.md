@@ -151,6 +151,10 @@ kydol37.ratior.ui.web
 ```
    * Sign in
      Travis CI(http://travis-ci.org) sign in with github account
+   * Travis Installation (https://github.com/travis-ci/travis.rb#installation)
+     ruby 설치 (http://rubyinstaller.org/)
+     > gem install travis --no-rdoc --no-ri
+     > travis version
    * Activate GitHub Webhook
      go to https://travis-ci.org/profile , enable the service hook for
    * Add .travis.yml file to repository
@@ -162,12 +166,11 @@ kydol37.ratior.ui.web
 ```
    * Sign in
      heroku(https://dashboard.heroku.com/apps) sign
-   * heroku tool 설치 및 ssh 설정
-          툴 설치(https://toolbelt.heroku.com/windows) 후 
-     command 창에서  >heroku auth:token 으로 사이트에 ssh 생성 등록
-   * create .travis.yml 파일 생성 
-     github 프로젝트 root에 .travis.yml파일 생성    
-   * setting api_key secure
-     create encrypt (http://rkh.github.io/travis-encrypt/public/index.html)
-     setting ecrypt value into .travis.yml
+   * heroku tool 설치
+          툴 설치(https://toolbelt.heroku.com/windows) 
+   * ssh 및  api_key setting
+     site에 로그인하여 account에서 ssh key 등록(github와 동일) 후,
+     api_key 생성     
+   * create api_key secure
+     travis encrypt api_key값 --add deploy.api_key
 ```

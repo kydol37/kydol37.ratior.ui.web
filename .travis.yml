@@ -1,31 +1,25 @@
 language: node_js
 node_js:
-  - 0.10
-
+- 0.1
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - cd app
-  - npm install -g karma
-  - npm install -g karma-cli
-  - npm install -g bower
-  - bower install
-  
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- cd app
+- npm install -g karma
+- npm install -g karma-cli
+- npm install -g bower
+- bower install
 branches:
   only:
-    - develop
-
+  - develop
 deploy:
   provider: heroku
   api_key:
-    secure: Wj+Bo0rMTbpgPT4K2glFfdo1HnuoVNKqJeUp2UM4Adc0M2ojqwcbdu06393mVKYFAGQ5rHpYqzZDaurZdBaI78HkIkWguujb8cdqTi3JHf/LLwWiIVUVmzy9dt+SMZGX3G7xZhoG1HgAn0bbCdmVlal4ubJm+z31D2WKLIHqhSs=
-  app: 
-    ratior-staging
-  
+    secure: Tms3OHEgiYiXHnNAHb+y+UqraNzTSgti1vTSkjbJNAJJi78XkC+vOyvGrkUYJwYNkLzwHhKRR76GIgEo5TZQliSDWPM173en+7zNyKHq6vSMB5e1k4jw1oZPb0r4gJ5Cnd/zDtE3hINTmOlMfEYtThVDzrExaZKNMeR+kyaRRGE=
+  app: ratior-staging
 notifications:
   email:
     recipients:
-      - kydol37@gmail.com
+    - kydol37@gmail.com
     on_success: change
     on_failure: always
-    

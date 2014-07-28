@@ -9,7 +9,9 @@ before_script:
 - npm install -g karma-cli
 - npm install -g bower
 - bower install
-- node ./scripts/web-server.js
+- node ./scripts/web-server.js &
+after_script:
+- ps -ef | grep node | awk '{print $2}' | xargs kill -9
 branches:
   only:
   - develop

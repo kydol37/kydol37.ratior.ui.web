@@ -14,7 +14,7 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: EM9fJILOHITbYU5ehva00kVyJqOqWtVIGzMFfkOPx/BqR5EfQ8sviJILu4D9GbG5fgnWDpDIhcjAlLRlketUJg54X6e9Ijk2kfoU7GoNV54xBnr1oiK3eaCqfTqAoNxkdJjp2DUPjzlR6zFQX5FN/C22+hkcsGNkVNfRM0IxSSo=
+    secure: Wj+Bo0rMTbpgPT4K2glFfdo1HnuoVNKqJeUp2UM4Adc0M2ojqwcbdu06393mVKYFAGQ5rHpYqzZDaurZdBaI78HkIkWguujb8cdqTi3JHf/LLwWiIVUVmzy9dt+SMZGX3G7xZhoG1HgAn0bbCdmVlal4ubJm+z31D2WKLIHqhSs=
   app: 
     ratior-staging
   

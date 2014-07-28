@@ -34,7 +34,8 @@
 	    "start": "http-server -a localhost -p 8000",
 	
 	    "pretest": "npm install",
-	    "test": "karma start test/karma.conf.js",
+	    "test": "./node_modules/.bin/karma start test/karma.conf.js",
+	    "test-win": "karma start test/karma.conf.js",
 	    "test-single-run": "karma start test/karma.conf.js  --single-run",
 	    "test-e2e": "karma start test/karma-e2e.conf.js"
 	}

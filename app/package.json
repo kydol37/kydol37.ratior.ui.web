@@ -37,15 +37,7 @@
 	    "test": "karma start test/karma.conf.js",
 	    "test-single-run": "karma start test/karma.conf.js  --single-run",
 	    "test-e2e": "karma start test/karma-e2e.conf.js",
-	    
-	    "preupdate-webdriver": "npm install",
-	    "update-webdriver": "webdriver-manager update",
-	
-	    "preprotractor": "npm run update-webdriver",
-	    "protractor": "protractor test/protractor-conf.js",
-	
-	    "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + cat('main/lib/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
-	  }
+	}
 }
 
 

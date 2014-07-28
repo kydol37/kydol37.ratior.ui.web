@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - 0.10
+  - 0.11
+
+before_script:
+  - npm install -g bower
+  
+branches:
+  only:
+    - develop
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: EM9fJILOHITbYU5ehva00kVyJqOqWtVIGzMFfkOPx/BqR5EfQ8sviJILu4D9GbG5fgnWDpDIhcjAlLRlketUJg54X6e9Ijk2kfoU7GoNV54xBnr1oiK3eaCqfTqAoNxkdJjp2DUPjzlR6zFQX5FN/C22+hkcsGNkVNfRM0IxSSo=
+  app: 
+    ratior-staging
+  
+notifications:
+  email:
+    recipients:
+      - kydol37@gmail.com
+    on_success: change
+    on_failure: always
+    

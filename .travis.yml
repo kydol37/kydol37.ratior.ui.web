@@ -6,6 +6,8 @@ before_script:
   - cd app
   - npm install -g bower
   - bower install
+  - npm install -g karma
+  - npm install -g karma-cli
   
 branches:
   only:

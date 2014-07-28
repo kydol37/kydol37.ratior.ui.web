@@ -160,6 +160,8 @@ kydol37.ratior.ui.web
    * Add .travis.yml file to repository
      : travis CI의 빌드 설정 및 테스트 환경등에 대한 모든 설정을 기록하는 파일
    * Trigger your first build with a git push
+   
+   * CI에서 테스트는 e2e 테스트로, 로컬 테스트 unit 테스트로
 ```
    
 ## 배포 호스트 서버 설정

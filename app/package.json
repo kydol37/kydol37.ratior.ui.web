@@ -30,13 +30,16 @@
 	
 	"scripts": {
 	    "prestart": "npm install",
-	    "start": "http-server -a localhost -p 8000",
-	
+	    "start-local": "http-server -a localhost -p 8000",
+	    "start": "node ./bin/www",
+	    
 	    "pretest": "npm install",
 	    "test": "./node_modules/.bin/karma start test/karma-e2e.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox",
 	    "test-unit": "./node_modules/.bin/karma start test/karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox",
 	    "test-unit-win": "karma start test/karma.conf.js",
-	    "test-e2e-win": "karma start test/karma-e2e.conf.js"
+	    "test-e2e-win": "karma start test/karma-e2e.conf.js",
+	    
+	    "postinstall": "./node_modules/bower/bin/bower install"
 	}
 }
 

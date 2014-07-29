@@ -20,8 +20,7 @@ deploy:
   api_key:
     secure: Tms3OHEgiYiXHnNAHb+y+UqraNzTSgti1vTSkjbJNAJJi78XkC+vOyvGrkUYJwYNkLzwHhKRR76GIgEo5TZQliSDWPM173en+7zNyKHq6vSMB5e1k4jw1oZPb0r4gJ5Cnd/zDtE3hINTmOlMfEYtThVDzrExaZKNMeR+kyaRRGE=
   app: ratior-staging
-  on:
-    repo: kydol37/kydol37.ratior.ui.web/branches/develop
+  on: develop
 notifications:
   email:
     recipients:

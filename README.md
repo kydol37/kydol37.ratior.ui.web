@@ -126,23 +126,23 @@ kydol37.ratior.ui.web
 
 ## Running
 ```
-   kydol37.ratior.ui.web\app>npm start
+   kydol37.ratior.ui.web\app>npm start-local
       브라우저에서 localhost:8000/main/index.html 로 접속
 ```   
 ## Testing
    
    * unit Test
      ```
-     kydol37.ratior.ui.web/app>.\scripts\test.bat 또는
-     kydol37.ratior.ui.web/app>npm run-script test
+     - kydol37.ratior.ui.web/app>.\scripts\test.bat 또는
+     - kydol37.ratior.ui.web/app>npm run-script test-unit-win
      ```
    
    * e2e Test
      ```    
-         한 콘솔에서          kydol37.ratior.ui.web/app>node .\scripts\web-server.js 
-         다른 한 콘솔에서  1) kydol37.ratior.ui./web/app>.\scripts\e2e-test.bat 또는
-                  2) kydol37.ratior.ui/web/app>npm run-script test-e2e
-        또는 브라우저에서 3) http://localhost:8000/test/e2e/runner.html 접속
+     - kydol37.ratior.ui./web/app>.\scripts\e2e-test.bat 또는
+     - kydol37.ratior.ui/web/app>npm run-script test-e2e-win 또는
+     - kydol37.ratior.ui/web/app>npm run-script test-e2e-page 후,
+               브라우저에서 http://localhost:8001/test/e2e/runner.html 접속
     ```    
 
 # [2014.07.28] 
@@ -151,15 +151,18 @@ kydol37.ratior.ui.web
 ```
    * Sign in
      Travis CI(http://travis-ci.org) sign in with github account
+     
    * Travis Installation (https://github.com/travis-ci/travis.rb#installation)
      ruby 설치 (http://rubyinstaller.org/)
      > gem install travis --no-rdoc --no-ri
      > travis version
+     
    * Activate GitHub Webhook
      go to https://travis-ci.org/profile , enable the service hook for
+     github(https://github.com/kydol37/kydol37.ratior.ui.web/settings/hooks) 에서 확인
+     
    * Add .travis.yml file to repository
      : travis CI의 빌드 설정 및 테스트 환경등에 대한 모든 설정을 기록하는 파일
-   * Trigger your first build with a git push
    
    * CI에서 테스트는 e2e 테스트로, 로컬 테스트 unit 테스트로
 ```
@@ -168,11 +171,15 @@ kydol37.ratior.ui.web
 ```
    * Sign in
      heroku(https://dashboard.heroku.com/apps) sign
+     
    * heroku tool 설치
           툴 설치(https://toolbelt.heroku.com/windows) 
+          
    * ssh 및  api_key setting
-     site에 로그인하여 account에서 ssh key 등록(github와 동일) 후,
-     api_key 생성     
-   * create api_key secure
-     travis encrypt api_key값 --add deploy.api_key
+     site에 로그인하여 account에서 ssh key 등록(github와 동일) 후, api_key 생성
+          
+   * .travis.yml에 heroku 배포 설정
+     >travis setup keroku --force
+     
+   * package.json의 "scripts"에 내용 추가(소스 참조)
 ```

@@ -36,12 +36,13 @@
 	    
 	    "pretest": "npm install",
 	    
+	    "test1": "start echo \"test\" && start cmd",
+	    
 	    "test": "./node_modules/.bin/karma start test/karma-e2e.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox",
 	    "test-unit": "./node_modules/.bin/karma start test/karma.conf.js --no-auto-watch --single-run --reporters=dots --browsers=Firefox",
-	    "test-unit-win": "karma start test/karma.conf.js",
-	    "test-e2e-win": "karma start test/karma-e2e.conf.js"    
+	    "test-unit-win": "karma start test/karma.conf.js --auto-watch --single-run --reporters=dots --browsers=Chrome",
+	    "test-e2e-win": "start node scripts/web-server-local.js && karma start test/karma-e2e.conf.js --auto-watch --single-run --reporters=dots --browsers=Chrome",
+	    "test-e2e-page": "start node scripts/web-server-local.js"    
+	    
 	}
 }
-
-
-

@@ -20,7 +20,7 @@ module.exports = function(config){
     exclude: [
     ],
     
-    autoWatch : true,
+    autoWatch : false,
 
     LogLevel: config.LOG_DEBUG,
     
@@ -33,7 +33,7 @@ module.exports = function(config){
   
    //Continuous Integration mode
    // if true, Karma captures browsers, runs the tests and exits
-   singleRun: false
+   singleRun: true
 
   });
 };

@@ -188,3 +188,15 @@ kydol37.ratior.ui.web
      
    * package.json의 "scripts"에 내용 추가(소스 참조)
 ```
+
+### heroku 기본 운영 명령어 들
+...
+   * log 보기
+     > heroku logs --tail --app ratior-staging
+   
+   * 재시작
+     > heroku restart
+     
+   * 프로세스
+     > heroku ps --app ratior-staging
+...

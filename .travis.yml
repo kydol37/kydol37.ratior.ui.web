@@ -15,17 +15,17 @@ after_script:
 branches:
   only:
   - develop
-deploy:
-  provider: heroku
-  api_key:
-    secure: ANTs3xV2anBKvMAAvk9lfU5s7SJXuET/iwZDYiUUMTlKWgFO6p8RjSrw9oeE+LC1Zt2C5uxrYcrPzBzHTkStamW5rxLbScUq43+f3quDbSFxAd2L2Typm2Uah4LhwfC989F1yRjJYdrcjSNc6sF2WklU/PwYqECxDcbw/nmHpuE=
-  app: ratior-staging
-  on:
-    repo: kydol37/kydol37.ratior.ui.web
-    branch: develop
 notifications:
   email:
     recipients:
     - kydol37@gmail.com
     on_success: change
     on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: DMaGbIkll5GseSxD8RWKiyXSj2so/rhyYrlrFuQHyW4CiKx66MWO78gcbVnW+uBN5sHfdOoopABvFW1e7Lb749NvZvF9SRDAj+IKEV3aYXmSKnjI09WlFhih8nNUzDE/1ry+kCsxYYqMmHL0CIiGrxtP5htq55s9EDo6PtGnZTY=
+  app: ratior-staging
+  on:
+    repo: kydol37/kydol37.ratior.ui.web
+    branch: develop

@@ -177,8 +177,13 @@ kydol37.ratior.ui.web
           
    * ssh 및  api_key setting
      site에 로그인하여 account에서 ssh key 등록(github와 동일) 후, api_key 생성
+   
+   * heroku에 app 생성
+     > heroku create rating-staging
+     > git remote -v
+     > heroku git:remote -a kydol37/kydol37.ratior.ui.web
           
-   * .travis.yml에 heroku 배포 설정
+   * .travis.yml에 heroku 배포 설정 내용 추가
      >travis setup keroku --force
      
    * package.json의 "scripts"에 내용 추가(소스 참조)
